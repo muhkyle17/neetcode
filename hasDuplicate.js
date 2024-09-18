@@ -17,7 +17,7 @@ class Solution {
   }
 }
 
-class Solution {
+class Solution2 {
   /**
    * @param {number[]} nums
    * @return {boolean}
