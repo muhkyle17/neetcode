@@ -34,3 +34,7 @@ class Solution2 {
     return false
   }
 }
+
+const solution = new Solution2()
+console.log(solution.hasDuplicate([1, 2, 3, 4, 5, 3])) // Example output: true
+console.log(solution.hasDuplicate([1, 2, 3, 4, 5]))
