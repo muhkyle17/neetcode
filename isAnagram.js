@@ -31,8 +31,7 @@ class Solution2 {
     const countT = {}
 
     for (let i = 0; i < s.length; i++) {
-      // countS[s[i]] = 1 + (countS[s[i]] || 0)
-      countS[s[i]] = 'hi'
+      countS[s[i]] = 1 + (countS[s[i]] || 0)
       countT[t[i]] = 1 + (countT[t[i]] || 0)
     }
 
