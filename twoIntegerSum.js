@@ -34,17 +34,17 @@ class Solution2 {
   twoSum(nums, target) {
     const map = new Map()
 
-    for (let index = 0; index < nums.length; index++) {
-      const num = nums[index]
+    for (let i = 0; i < nums.length; i++) {
+      const num = nums[i]
       const complement = target - num
       const sumIndex = map.get(complement)
 
       const isTarget = map.has(complement)
       if (isTarget) {
-        return [index, sumIndex]
+        return [i, sumIndex]
       }
 
-      map.set(num, index)
+      map.set(num, i)
     }
 
     return [-1, -1]
