@@ -34,7 +34,7 @@ class Solution2 {
    */
 
   groupAnagrams(strs) {
-    const res = {}
+    const obj = {}
     for (let str of strs) {
       const count = new Array(26).fill(0)
       for (let char of str) {
@@ -42,12 +42,13 @@ class Solution2 {
       }
 
       const key = count.join(',')
-      if (!res[key]) {
-        res[key] = []
+      if (!obj[key]) {
+        obj[key] = []
       }
-      res[key].push(str)
+      obj[key].push(str)
     }
-    return Object.values(res)
+
+    return Object.values(obj)
   }
 }
 
